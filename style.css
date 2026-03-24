@@ -1,8 +1,38 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Contrail+One&display=swap');
+
 
 body {
   margin: 0;
-  font-family: "Inter", sans-serif;
+  background-color: #b2c0b4;
+}
+
+.parallax_index {
+  /* The image used */
+  background-image: url("images/tennis_courts.jpg");
+
+  /* Set a specific height */
+  min-height: 700px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main_content{
+    width: 80%;
+    font-family: "Inter", sans-serif;
+    box-sizing: border-box;
+   	max-width: 1114px; 
+    overflow: hidden;
+    padding: min(5em, 8%);
+    background-color: #7c8d51;
+    box-shadow: #2f3827 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+    border-radius: 10px;
+    text-align: justify;
+    margin: 20px auto;
 }
 
 .topnav {
@@ -21,6 +51,7 @@ body {
   font-size: 20px;
   margin: 18px 10px;
   border-radius: 25px;
+  font-family: "Contrail One", sans-serif;
 }
 
 .topnav a:hover {
@@ -57,6 +88,7 @@ footer a{
     color: #2f3827;
     text-decoration: none;
     padding: 5px;
+    font-family: "Contrail One", sans-serif;
 }
 
 footer a:hover{
@@ -66,10 +98,23 @@ footer a:hover{
 }
 
 footer p{
-    font-size: 18px;
+    font-size: 16px;
     color: #431f0e;
     background-color: #d26b2b;
     border-radius: 10px;
+    font-family: "Contrail One", sans-serif;
+}
+
+iframe{
+    width: 100%;
+    height: 600px;
+}
+
+@media screen and (max-width: 1100px) and (min-width: 800px){
+    iframe{
+        width: 100%;
+        height: 450px;
+    }
 }
 
 @media screen and (max-width: 800px) {
@@ -96,5 +141,10 @@ footer p{
   
   .topnav img{
     margin: 2%;
+}
+
+iframe{
+    width: 100%;
+    height: 300px;
 }
 }
