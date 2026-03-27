@@ -39,8 +39,8 @@ strong{
 /* Marker selects only the numbers/dots and styles them */
 li::marker {
   font-weight: bold;
-  color:  hsl(23, 66%, 50%);
-  text-shadow: 1px 1px 2px #431F0e; 
+  color:  hsl(19, 63%, 24%);
+  text-shadow: 1px 1px 2px hsl(19, 63%, 24%); 
 }
 
 /* floats the img to the right and sets a height, width, border radius and padding */
