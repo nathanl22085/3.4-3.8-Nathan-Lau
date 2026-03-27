@@ -2,41 +2,48 @@
 @import url('https://fonts.googleapis.com/css2?family=Contrail+One&display=swap');
 
 
+/* sets a margin on the body */
 body {
   margin: 0;
-  background-color: #b2c0b4;
 }
 
+/* sets a colour, aligns text to the centre and gives a text shadow */
 h1,h2{
     color:  hsl(23, 66%, 50%);
     text-align: center;
     text-shadow: 1px 1px 2px #431F0e;
 }
 
+/* colours the p and li tags and sizes them */
 p,li{
   color: hsl(51, 69%, 89%);
   font-size: clamp(1rem, calc(1.5vw + 0.25rem), 1.5rem);
 }
 
+/* sets the size of h1 tags */
 h1{
   font-size: clamp(2rem, calc(2vw + 0.75rem), 2.25rem);
 }
 
+/* sets the size of h2 tags */
 h2{
   font-size: clamp(1.5rem, calc(1.75vw + 0.5rem), 1.75rem);
 }
 
+/* sets a colour and gives a text shadow */
 strong{
   color:  hsl(23, 66%, 50%);
   text-shadow: 1px 1px 2px #431F0e;
 }
  
+/* Marker selects only the numbers/dots and styles them */
 li::marker {
   font-weight: bold;
   color:  hsl(23, 66%, 50%);
-  text-shadow: 1px 1px 2px #431F0e;
+  text-shadow: 1px 1px 2px #431F0e; 
 }
 
+/* floats the img to the right and sets a height, width, border radius and padding */
 .float_right_img{
   float: right;
   height: auto;
@@ -45,9 +52,10 @@ li::marker {
   padding: 20px;
 }
 
+/* top parallax on the page */
 .parallax_how_to_play {
   /* The image used */
-  background-image: url("images/backhand.jpg");
+  background-image: url("images/forehand.jpg");
 
   /* Set a specific height */
   height: 900px; 
@@ -59,9 +67,10 @@ li::marker {
   background-size: cover;
 }
 
+/* parallax behind the main content */
 .parallax_how_to_play2 {
   /* The image used */
-  background-image: url("images/forehand.jpg");
+  background-image: url("images/serve.jpg");
 
   /* Set a specific height */
   min-height: 800px; 
@@ -74,6 +83,7 @@ li::marker {
   padding-top: 20px;
 }
 
+/* top parallax on the page */
 .parallax_index {
   /* The image used */
   background-image: url("images/tennis.jpg");
@@ -88,6 +98,7 @@ li::marker {
   background-size: cover;
 }
 
+/* parallax behind the main content */
 .parallax_index2 {
   /* The image used */
   background-image: url("images/clay_courts.jpg");
@@ -103,6 +114,7 @@ li::marker {
   padding-top: 20px;
 }
 
+/* the main content, sets a width, font, padding, box shadow, margin */
 .main_content{
     width: 80%;
     font-family: "Inter", sans-serif;
@@ -118,12 +130,14 @@ li::marker {
     margin-bottom: 10px;
 }
 
+/* My navigation bar */
 .topnav {
   overflow: hidden;
   padding: 0px 20px 0px 0px;
   background-color: hsl(77, 27%, 44%, 0.7);
 }
 
+/* my hyperlinks in my navigation bar which have font size, padding, borders */
 .topnav a {
   float: right;
   display: block;
@@ -137,11 +151,13 @@ li::marker {
   font-family: "Contrail One", sans-serif;
 }
 
+/* changes the background colour of the nav bar links and colour of the text when hovered over */
 .topnav a:hover {
   background-color: hsl(213, 78%, 72%, 0.7);
   color: #10234a;
 }
 
+/* changes the background colour of the nav bar links and colour of the text when being the current tab the user is on */
 .topnav a.active {
   background-color: hsl(23, 66%, 50%, 0.7);
   color: #431F0e;
@@ -151,6 +167,7 @@ li::marker {
   display: none;
 }
 
+/* my logo */
 .topnav img{
     float: left;
     height: 80px;
@@ -159,6 +176,7 @@ li::marker {
     margin: 0% 0% 0% 8%;
 }
 
+/* my footer which contains hyperlinks and text */
 footer{
     text-align: center;
     font-size: 20px;
@@ -168,6 +186,7 @@ footer{
     margin-top: 20px;
 }
 
+/* colours my hyperlinks and removes the underline */
 footer a{
     color: #2f3827;
     text-decoration: none;
@@ -175,28 +194,30 @@ footer a{
     font-family: "Contrail One", sans-serif;
 }
 
+/* makes the hyperlinks display differently when hovered over */
 footer a:hover{
     color: #10234a;
     background-color: hsl(213, 78%, 72%, 0.7);
     border-radius: 25px;
 }
 
+/* changes the colour of the p tags in the footer */
 footer p{
     font-size: 16px;
     color: #431f0e;
-    background-color: hsl(23, 66%, 50%, 0.7);
     border-radius: 10px;
     font-family: "Contrail One", sans-serif;
 }
 
+/* sets the width and height of my iframes */
 iframe{
     width: 100%;
     height: 600px;
     border-radius: 25px;
 }
 
-
 @media screen and (max-width: 1600px) and (min-width: 1400px){
+  /* makes the top parallax smaller to show the word tennis on a smaller screen */
 .parallax_index{
   width: 100%;
   height: 800px;
@@ -208,6 +229,7 @@ iframe{
 }
 
 @media screen and (max-width: 1400px) and (min-width: 1000px){
+  /* makes the top parallax smaller to show the word tennis on a smaller screen */
   .parallax_index{
   width: 100%;
   height: 650px;
@@ -215,6 +237,7 @@ iframe{
   background-size: contain;
   background-repeat: no-repeat;
 }
+/* makes the top parallax smaller to show on a smaller screen */
  .parallax_how_to_play{
   width: 100%;
   height: 650px;
@@ -225,10 +248,12 @@ iframe{
 }
 
 @media screen and (max-width: 1000px) and (min-width: 800px){
+  /* makes the iframe smaller to fit on a smaller screen */
     iframe{
         width: 100%;
         height: 600px;
     }
+    /* makes the top parallax smaller to show the word tennis on a smaller screen */
     .parallax_index{
   width: 100%;
   height: 500px;
@@ -237,6 +262,8 @@ iframe{
   background-repeat: no-repeat;
 }
 
+
+/* makes the top parallax smaller to show on a smaller screen */
 .parallax_how_to_play{
   width: 100%;
   height: 500px;
@@ -245,6 +272,7 @@ iframe{
   background-repeat: no-repeat;
 }
 
+/* Changes the sizing of the images */
 .float_right_img{
   float: right;
   height: auto;
@@ -276,15 +304,18 @@ iframe{
     text-align: left;
   }
   
+  /* lines up the logo with hyperlinks in hamburger menu */
   .topnav img{
     margin: 2%;
 }
 
+/* makes the iframe smaller to fit on a smaller screen */
 iframe{
     width: 100%;
     height: 300px;
 }
 
+/* makes the top parallax smaller to show the word tennis on a smaller screen */
 .parallax_index{
   width: 100%;
   height: 350px;
@@ -293,6 +324,7 @@ iframe{
   background-repeat: no-repeat;
 }
 
+/* makes the top parallax smaller to show on a smaller screen */
 .parallax_how_to_play{
   width: 100%;
   height: 350px;
@@ -301,6 +333,7 @@ iframe{
   background-repeat: no-repeat;
 }
 
+/* Changes the sizing of the images */
 .float_right_img{
   float: right;
   height: auto;
