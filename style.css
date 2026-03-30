@@ -7,6 +7,18 @@ body {
   margin: 0;
 }
 
+.arrow {
+  border: solid black;
+  border-width: 0 10px 10px 0;
+  display: inline-block;
+  padding: 20px;
+}
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
 /* sets a colour, aligns text to the centre and gives a text shadow */
 h1,h2{
     color:  hsl(23, 66%, 50%);
@@ -83,10 +95,19 @@ li::marker {
   padding-top: 20px;
 }
 
+.parallax_text_how_to_play h1{
+  font-size: 175px;
+  color: white;
+  font-family: "Inter", sans-serif;
+  margin: auto;
+  padding: 250px;
+  width: 100%;
+}
+
 /* top parallax on the page */
 .parallax_index {
   /* The image used */
-  background-image: url("images/tennis.jpg");
+  background-image: url("images/multiple_clay_courts.jpg");
 
   /* Set a specific height */
   height: 900px; 
@@ -112,6 +133,15 @@ li::marker {
   background-repeat: no-repeat;
   background-size: cover;
   padding-top: 20px;
+
+}
+.parallax_text_art_of_tennis h1{
+  font-size: 175px;
+  color: white;
+  font-family: "Inter", sans-serif;
+  margin-top: 50px;
+  padding: 265px;
+  width: 100%;
 }
 
 /* the main content, sets a width, font, padding, box shadow, margin */
@@ -310,26 +340,20 @@ iframe{
   to {opacity: 1}
 }
 
-@media screen and (max-width: 1500px) and (min-width: 1400px){
-  /* makes the top parallax smaller to show the word tennis on a smaller screen */
-.parallax_index{
-  width: 100%;
-  height: 800px;
-  background-position: top;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
-}
-
 @media screen and (max-width: 1400px) and (min-width: 1000px){
-  /* makes the top parallax smaller to show the word tennis on a smaller screen */
-  .parallax_index{
-  width: 100%;
-  height: 650px;
-  background-position: top;
-  background-size: contain;
-  background-repeat: no-repeat;
+
+  /* makes the text in the top parallax smaller to show on a smaller screen */
+.parallax_text_art_of_tennis h1{
+  font-size: 125px;
+  margin-top: 50px;
+  padding: 250px;
+}
+
+/* makes the text in the top parallax smaller to show on a smaller screen */
+.parallax_text_how_to_play h1{
+  font-size: 125px;
+  margin-top: 50px;
+  padding: 250px;
 }
 
 }
@@ -340,13 +364,12 @@ iframe{
         width: 100%;
         height: 600px;
     }
-    /* makes the top parallax smaller to show the word tennis on a smaller screen */
-    .parallax_index{
-  width: 100%;
-  height: 500px;
-  background-position: top;
-  background-size: contain;
-  background-repeat: no-repeat;
+
+    /* makes the text in the top parallax smaller to show on a smaller screen */
+    .parallax_text_art_of_tennis h1{
+  font-size: 100px;
+  margin-top: 50px;
+  padding: 250px;
 }
 
 /* Changes the sizing of the images */
@@ -356,6 +379,13 @@ iframe{
   width: 200px;
   border-radius: 25px;
   padding: 10px;
+}
+
+/* makes the text in the top parallax smaller to show on a smaller screen */
+.parallax_text_how_to_play h1{
+  font-size: 100px;
+  margin-top: 50px;
+  padding: 250px;
 }
 }
 
@@ -404,7 +434,7 @@ iframe{
 /* makes the top parallax smaller to show on a smaller screen */
 .parallax_how_to_play{
   width: 100%;
-  height: 350px;
+  height: 400px;
   background-position: top;
   background-size: contain;
   background-repeat: no-repeat;
@@ -417,5 +447,19 @@ iframe{
   width: 150px;
   border-radius: 25px;
   padding: 10px;
+}
+
+/* makes the text in the top parallax smaller to show on a smaller screen */
+.parallax_text_art_of_tennis h1{
+  font-size: 75px;
+  margin-top: 50px;
+  padding: 50px;
+}
+
+/* makes the text in the top parallax smaller to show on a smaller screen */
+.parallax_text_how_to_play h1{
+  font-size: 75px;
+  margin-top: 50px;
+  padding: 50px;
 }
 }
