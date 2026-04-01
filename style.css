@@ -75,6 +75,47 @@ li::marker {
 }
 
 /* top parallax on the page */
+.parallax_grand_slam {
+  /* The image used */
+  background-image: url("images/ball_on_hard_court.jpg");
+
+  /* Set a specific height */
+  height: 900px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* parallax behind the main content */
+.parallax_grand_slam2 {
+  /* The image used */
+  background-image: url("images/tennis_balls.jpg");
+
+  /* Set a specific height */
+  min-height: 800px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 20px;
+}
+
+/* text on top of the top parallax image */
+.parallax_text_grand_slam h1{
+  font-size: 150px;
+  color: hsl(51, 69%, 89%);
+  font-family: "Inter", sans-serif;
+  margin: auto;
+  padding: 250px;
+  width: 100%;
+}
+
+/* top parallax on the page */
 .parallax_how_to_play {
   /* The image used */
   background-image: url("images/tennis_ball_on_clay.jpg");
@@ -105,6 +146,7 @@ li::marker {
   padding-top: 20px;
 }
 
+/* text on top of the top parallax image */
 .parallax_text_how_to_play h1{
   font-size: 175px;
   color: hsl(51, 69%, 89%);
@@ -145,6 +187,8 @@ li::marker {
   padding-top: 20px;
 
 }
+
+/* text on top of the top parallax image */
 .parallax_text_art_of_tennis h1{
   font-size: 175px;
   color: hsl(51, 69%, 89%);
@@ -479,6 +523,15 @@ iframe{
   background-repeat: no-repeat;
 }
 
+/* makes the top parallax smaller to show on a smaller screen */
+.parallax_grand_slam{
+  width: 100%;
+  height: 400px;
+  background-position: top;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
 /* Changes the sizing of the images */
 .float_right_img{
   float: right;
@@ -497,6 +550,13 @@ iframe{
 
 /* makes the text in the top parallax smaller to show on a smaller screen */
 .parallax_text_how_to_play h1{
+  font-size: 75px;
+  margin-top: 50px;
+  padding: 50px;
+}
+
+/* makes the text in the top parallax smaller to show on a smaller screen */
+.parallax_text_grand_slam h1{
   font-size: 75px;
   margin-top: 50px;
   padding: 50px;
