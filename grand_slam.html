@@ -41,16 +41,54 @@ Wimbledon follows in late June in London; as the oldest and most traditional tou
 The season concludes in late August with the US Open in New York City, held on hard courts and known for its electric atmosphere, night sessions, and massive crowds at Arthur Ashe Stadium.
 </p>
 <br>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <h3>Australian Open (AO)</h3>
+      <img src="images/australian_open.jpg" alt="australian open">
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <h3>Roland Garros</h3>
+      <img src="images/roland_garros.jpg" alt="roland garros">
+    </div>
+  </div>
+</div>
 
+<button class="accordion">Australian Open<div class="triangle_down"></div></button>
+<div class="panel">
+  <ul>
+    <li>Location: Melbourne Park, Melbourne, Australia</li>
+    <li>Surface: Hard Court (Blue Plexicushion)</li>
+    <li>Time: January</li>
+    <li>Vibe: Known as the "Happy Slam" due to its festive atmosphere. It is physically grueling because players often compete in extreme summer heat (regularly above 35°C).</li>
+    <li>2026 Update: Carlos Alcaraz won the men's title, completing his "Career Grand Slam" (winning all four majors at least once). Elena Rybakina claimed the women's title.</li>
+
+  </ul>
+  </div>
+
+
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <h3>Wimbledon</h3>
+      <img src="images/wimbledon.jpg" alt="wimbledon" title="wimbledon">
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <h3>US Open</h3>
+      <img src="images/us_open.jpg" alt="US open" title="US open">
+    </div>
+  </div>
+</div>
 
 
 
 
   </div>
-
-
-
-
 
 
 
@@ -66,5 +104,38 @@ The season concludes in late August with the US Open in New York City, held on h
   </footer>
   <!-- This closes off my footer -->
    </div>
+
+<!--Javascript and the code for the modal-->
+		<div class="pop_up_image"><span>&times;</span> <img alt="australian open" src="images/australian_open.jpg"></div>
+	<script>
+	             document.querySelectorAll('.card img').forEach(image =>{
+	               image.onclick = () =>{
+	                   document.querySelector('.pop_up_image').style.display = 'block';
+	                   document.querySelector('.pop_up_image img').src = image.getAttribute('src');
+	               }
+	             })
+	               
+	             document.querySelector('.pop_up_image span').onclick = () =>{
+	               document.querySelector('.pop_up_image').style.display = 'none';
+	             }
+               var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    /* Toggle between adding and removing the "active" class */
+    this.classList.toggle("active");
+
+    /* Toggle between hiding and showing the active panel */
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+	</script>
+
 </body>
 </html>
