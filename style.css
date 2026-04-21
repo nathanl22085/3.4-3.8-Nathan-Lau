@@ -167,6 +167,47 @@ li::marker {
 }
 
 /* top parallax on the page */
+.parallax_big_three {
+  /* The image used */
+  background-image: url("images/balls_on_the_line.jpg");
+
+  /* Set a specific height */
+  height: 900px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* parallax behind the main contentw */
+.parallax_big_three2 {
+  /* The image used */
+  background-image: url("images/birdseye_view_of_tennis.jpg");
+
+  /* Set a specific height */
+  min-height: 800px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 20px;
+}
+
+/* text on top of the top parallax image */
+.parallax_text_big_three h1{
+  font-size: 175px;
+  color: hsl(51, 69%, 89%);
+  font-family: "Inter", sans-serif;
+  margin: auto;
+  padding: 250px;
+  width: 100%;
+}
+
+/* top parallax on the page */
 .parallax_grand_slam {
   /* The image used */
   background-image: url("images/ball_on_hard_court.jpg");
@@ -505,7 +546,7 @@ iframe{
   }
 
 /* Style the counter cards */
-.card {
+.card, .card_big_three {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   padding: 16px;
   text-align: center;
@@ -516,15 +557,29 @@ iframe{
 /* Styles all card images the same*/
 .card img{
   width: 100%;
-  height: 800;
+  height: 600px;
   border-radius: 25px;
+  object-fit: cover;
+}
+
+/* Styles all card images the same*/
+.card_big_three img{
+  width: 100%;
+  height: 800px;
+  border-radius: 25px;
+  object-fit: cover;
 }
 
 /* Changes opacity when hovered over to show the image is clickable */
-.card img:hover{
+.card,.card_big_three img:hover{
   opacity: 50%;
 }
 @media screen and (max-width: 1400px) and (min-width: 1000px){
+
+  /* Styles all card images the same*/
+.card,.card_big_three img{
+  height: 600px;
+}
 
   /* makes the text in the top parallax smaller to show on a smaller screen */
 .parallax_text_art_of_tennis h1{
@@ -543,6 +598,13 @@ iframe{
 /* makes the text in the top parallax smaller to show on a smaller screen */
 .parallax_text_grand_slam h1{
   font-size: 125px;
+  margin-top: 100px;
+  padding: 120px;
+}
+
+/* makes the text in the top parallax smaller to show on a smaller screen */
+.parallax_text_big_three h1{
+  font-size: 150px;
   margin-top: 100px;
   padding: 120px;
 }
@@ -591,9 +653,22 @@ iframe{
   margin-top: 60px;
   padding: 160px;
 }
+
+/* makes the text in the top parallax smaller to show on a smaller screen */
+.parallax_text_big_three h1{
+  font-size: 125px;
+  margin-top: 60px;
+  padding: 160px;
+}
 }
 
 @media screen and (max-width: 800px) {
+
+    /* Styles all card images the same*/
+.card,.card_big_three img{
+  height: 500px;
+}
+
 /* changes the topnav for phone view */
   .topnav {
     position: relative;
@@ -681,6 +756,15 @@ iframe{
   background-repeat: no-repeat;
 }
 
+/* makes the top parallax smaller to show on a smaller screen */
+.parallax_big_three{
+  width: 100%;
+  height: 400px;
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 /* Changes the sizing of the images */
 .float_right_img{
   float: right;
@@ -706,6 +790,13 @@ iframe{
 
 /* makes the text in the top parallax smaller to show on a smaller screen */
 .parallax_text_grand_slam h1{
+  font-size: 75px;
+  margin-top: 50px;
+  padding: 50px;
+}
+
+/* makes the text in the top parallax smaller to show on a smaller screen */
+.parallax_text_big_three h1{
   font-size: 75px;
   margin-top: 50px;
   padding: 50px;
@@ -739,4 +830,9 @@ iframe{
     display: block;
     margin-bottom: 10px;
   }
+
+  /* changes all card images size*/
+.card,.card_big_three img{
+  height: 400px;
+}
 }

@@ -11,7 +11,7 @@
 <script src="responsive_nav.js"></script>
 </head>
 <body>
-
+<div class="parallax_big_three">
 <div class="topnav" id="myTopnav">
     <img src="images/art_of_tennis.png" title="Art of Tennis" alt="Art of Tennis">
   <a href="big_three.html" class="active">Big Three</a>
@@ -22,10 +22,79 @@
     <i class="fa fa-bars"></i>
   </a>
 </div>
+ <div class="parallax_text_big_three"><h1>The Big Three</h1></div>
+</div>
+<div class="parallax_big_three2">
+  <div class="main_content">
+<h1>Who are the Big Three?</h1>
+<p>The "Big Three"—Roger Federer, Rafael Nadal, and Novak Djokovic—collectively redefined tennis through an unprecedented two-decade era of dominance, winning 66 out of 87 Grand Slam titles between 2003 and 2024.
+   Their prowess is best understood through their contrasting styles: Federer was the "Maestro," defined by an effortless, attacking grace and a record eight Wimbledon titles; Nadal was the "King of Clay," a physical warrior whose relentless topspin earned him a historic 14 French Open crowns; and Djokovic, arguably the greatest statistically, became the "Ultimate Defender" with a record 24 Grand Slam titles and the most weeks at world No. 1.
+    As of 2026, the era is nearing its conclusion: Federer and Nadal have retired, while Djokovic remains the final active member of the group, still competing at the highest level.</p>
 
-    
+
+<div class="row">
+  <div class="column">
+    <div class="card_big_three">
+      <h3>Roger Federer</h3>
+      <img src="images/roger_federer.jpg" alt="Roger Federer" title="Roger Federer">
+    </div>
+  </div>
+  <button class="accordion">Roger Federer "The Maestro"<div class="triangle_down"></div></button>
+<div class="panel">
+  <p>Federer was the first to reach the 20-Slam milestone and is often credited with bringing a renewed elegance and global popularity to the game.</p>
+  <ul>
+    <li>Grand Slam Titles: 20</li>
+    <li>Specialty: Grass (Record 8 Wimbledon titles).</li>
+    <li>Style: Known for an "effortless" style, a legendary one-handed backhand, and exceptional sportsmanship.</li>
+    <li>Status: Retired in September 2022. In 2026, he remains a global ambassador for the sport and was recently nominated for the International Tennis Hall of Fame.</li>
+  </ul>
+  </div>
+  <div class="column">
+    <div class="card_big_three">
+      <h3>Rafael Nadal </h3>
+      <img src="images/rafael_nadal.jpg" alt="roland garros">
+    </div>
+  </div>
+</div>
 
 
+
+
+<button class="accordion">Roland Garros<div class="triangle_down"></div></button>
+<div class="panel">
+  <ul>
+    <li>Location: Stade Roland Garros, Paris, France</li>
+    <li>Surface: Red Clay</li>
+    <li>Time: May – June</li>
+    <li>Vibe: The most physically demanding of the four. Clay slows down the ball and creates a high bounce, leading to long, grueling baseline rallies. It requires extreme patience and stamina.</li>
+    <li>2026 Dates: Scheduled for May 24 – June 7.</li>
+  </ul>
+  </div>
+  
+<div class="row">
+  <div class="column">
+    <div class="card_big_three">
+      <h3>Wimbledon</h3>
+      <img src="images/wimbledon.jpg" alt="wimbledon" title="wimbledon">
+    </div>
+  </div>
+  <button class="accordion">Wimbledon<div class="triangle_down"></div></button>
+<div class="panel">
+
+  <ul>
+    <li>Location: All England Club, London, UK</li>
+    <li>Surface: Grass</li>
+    <li>Time: June – July</li>
+    <li>Vibe: The oldest and most traditional tournament. It has a strict all-white dress code for players and is famous for its grass courts, which favor fast serves and net play. It is the only Major still played on grass.</li>
+    <li>2026 Dates: Scheduled for June 29 – July 12.</li>
+ </ul>
+  </div>
+  
+
+  </div>
+
+
+</div>
 
 
 
@@ -40,5 +109,37 @@
   <p>Site developed and created by Nathan Lau &copy; 2026</p>
   </footer>
   <!-- This closes off my footer -->
+</div>
+<!--Javascript and the code for the modal-->
+		<div class="pop_up_image"><span>&times;</span> <img alt="australian open" src="images/australian_open.jpg"></div>
+	<script>
+	             document.querySelectorAll('.card_big_three img').forEach(image =>{
+	               image.onclick = () =>{
+	                   document.querySelector('.pop_up_image').style.display = 'block';
+	                   document.querySelector('.pop_up_image img').src = image.getAttribute('src');
+	               }
+	             })
+	               
+	             document.querySelector('.pop_up_image span').onclick = () =>{
+	               document.querySelector('.pop_up_image').style.display = 'none';
+	             }
+               var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    /* Toggle between adding and removing the "active" class */
+    this.classList.toggle("active");
+
+    /* Toggle between hiding and showing the active panel */
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
+	</script>
 </body>
 </html>

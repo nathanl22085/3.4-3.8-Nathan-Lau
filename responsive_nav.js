@@ -1,7 +1,7 @@
 function myFunction() {
   var x = document.getElementById("myTopnav");
   // Target the h1 inside the parallax text containers
-  var parallaxH1 = document.querySelector('.parallax_text_art_of_tennis h1, .parallax_text_how_to_play h1, .parallax_text_grand_slam h1');
+  var parallaxH1 = document.querySelector('.parallax_text_art_of_tennis h1, .parallax_text_how_to_play h1, .parallax_text_grand_slam h1, .parallax_text_big_three');
 
   if (x.className === "topnav") {
     x.className += " responsive";
