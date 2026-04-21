@@ -576,10 +576,6 @@ iframe{
 }
 @media screen and (max-width: 1400px) and (min-width: 1000px){
 
-  /* Styles all card images the same*/
-.card img ,.card_big_three img{
-  height: 600px;
-}
 
   /* makes the text in the top parallax smaller to show on a smaller screen */
 .parallax_text_art_of_tennis h1{
@@ -618,6 +614,10 @@ iframe{
 }
 
 @media screen and (max-width: 1000px) and (min-width: 800px){
+.card_big_three img{
+  height: 500px;
+}
+
   /* makes the iframe smaller to fit on a smaller screen */
     iframe{
         width: 100%;
@@ -665,8 +665,8 @@ iframe{
 @media screen and (max-width: 800px) {
 
     /* Styles all card images the same*/
-.card,.card_big_three img{
-  height: 500px;
+.card img,.card_big_three img{
+  height: 400px;
 }
 
 /* changes the topnav for phone view */
@@ -830,9 +830,4 @@ iframe{
     display: block;
     margin-bottom: 10px;
   }
-
-  /* changes all card images size*/
-.card img,.card_big_three img{
-  height: 400px;
-}
 }
