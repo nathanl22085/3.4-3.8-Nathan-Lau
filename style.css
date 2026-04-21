@@ -571,7 +571,7 @@ iframe{
 }
 
 /* Changes opacity when hovered over to show the image is clickable */
-.card,.card_big_three img:hover{
+.card img:hover,.card_big_three img:hover{
   opacity: 50%;
 }
 @media screen and (max-width: 1400px) and (min-width: 1000px){
@@ -832,7 +832,7 @@ iframe{
   }
 
   /* changes all card images size*/
-.card,.card_big_three img{
+.card img,.card_big_three img{
   height: 400px;
 }
 }
