@@ -154,7 +154,6 @@ strong{
 li::marker {
   font-weight: bold;
   color:  hsl(19, 63%, 24%);
-  text-shadow: 1px 1px 2px hsl(19, 63%, 24%); 
 }
 
 /* floats the img to the right and sets a height, width, border radius and padding */
@@ -205,6 +204,7 @@ li::marker {
   margin: auto;
   padding: 250px;
   width: 100%;
+  text-shadow: 8px 8px 12px #000000;
 }
 
 /* top parallax on the page */
@@ -246,6 +246,7 @@ li::marker {
   margin: auto;
   padding: 250px;
   width: 100%;
+  text-shadow: 8px 8px 12px #000000;
 }
 
 /* top parallax on the page */
@@ -287,6 +288,7 @@ li::marker {
   margin: auto;
   padding: 250px;
   width: 100%;
+  text-shadow: 8px 8px 12px #000000;
 }
 
 /* top parallax on the page */
@@ -329,6 +331,7 @@ li::marker {
   margin-top: 50px;
   padding: 265px;
   width: 100%;
+  text-shadow: 8px 8px 12px #000000;
 }
 
 /* the main content, sets a width, font, padding, box shadow, margin */
@@ -342,7 +345,8 @@ li::marker {
     background-color: hsl(77, 27%, 44%, 0.85);
     box-shadow: #2f3827 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
     border-radius: 10px;
-    text-align: justify;
+    /* text-align: justify; */
+    text-align: left;
     margin: auto;
     margin-bottom: 10px;
 }
@@ -414,7 +418,9 @@ footer a{
 /* makes the hyperlinks display differently when hovered over */
 footer a:hover{
     color: #10234a;
-    background-color: hsl(213, 78%, 72%, 0.7);
+    background-color: hsl(213, 78%, 72%, 0.7); 
+    /* color: #431F0e;
+    background-color: hsl(23, 66%, 50%); */
     border-radius: 25px;
 }
 
