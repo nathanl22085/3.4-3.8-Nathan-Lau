@@ -121,57 +121,22 @@ body {
     margin: auto;
 }
 
-/* sets a colour, aligns text to the centre and gives a text shadow */
-h1,h2{
-    color:  hsl(23, 66%, 50%);
-    text-align: center;
-    text-shadow: 1px 1px 2px #431F0e;
-}
-
-/* colours the p and li tags and sizes them */
-p,li{
-  color: hsl(51, 69%, 89%);
-  font-size: clamp(1rem, calc(1.5vw + 0.25rem), 1.5rem);
-}
-
-/* sets the size of h1 tags */
-h1{
-  font-size: clamp(2rem, calc(2vw + 0.75rem), 2.25rem);
-}
-
-/* sets the size of h2 tags */
-h2{
-  font-size: clamp(1.5rem, calc(1.75vw + 0.5rem), 1.75rem);
-}
-
-/* sets a colour and gives a text shadow */
-strong{
-  color:  hsl(23, 66%, 50%);
-  text-shadow: 1px 1px 2px #431F0e;
-}
- 
-/* Marker selects only the numbers/dots and styles them */
-li::marker {
-  font-weight: bold;
-  color:  hsl(19, 63%, 24%);
-}
-
 /* floats the img to the right and sets a height, width, border radius and padding */
 .float_right_img{
   float: right;
   height: auto;
-  width: 250px;
+  width: 160px;
   border-radius: 50px;
-  padding: 20px;
+  padding: 15px;
 }
 
 /* top parallax on the page */
-.parallax_big_three {
+.parallax_big_three{
   /* The image used */
   background-image: url("images/balls_on_the_line.jpg");
 
   /* Set a specific height */
-  height: 900px; 
+  height: 1000px; 
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
@@ -181,7 +146,7 @@ li::marker {
 }
 
 /* parallax behind the main contentw */
-.parallax_big_three2 {
+.parallax_big_three2{
   /* The image used */
   background-image: url("images/birdseye_view_of_tennis.jpg");
 
@@ -213,7 +178,7 @@ li::marker {
   background-image: url("images/ball_on_hard_court.jpg");
 
   /* Set a specific height */
-  height: 900px; 
+  height: 1000px; 
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
@@ -240,11 +205,11 @@ li::marker {
 
 /* text on top of the top parallax image */
 .parallax_text_grand_slam h1{
-  font-size: 150px;
+  font-size: 125px;
   color: hsl(51, 69%, 89%);
   font-family: "Inter", sans-serif;
   margin: auto;
-  padding: 250px;
+  padding: 275px;
   width: 100%;
   text-shadow: 8px 8px 12px #000000;
 }
@@ -255,7 +220,7 @@ li::marker {
   background-image: url("images/tennis_ball_on_clay.jpg");
 
   /* Set a specific height */
-  height: 900px; 
+  height: 1000px; 
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
@@ -297,7 +262,7 @@ li::marker {
   background-image: url("images/multiple_clay_courts.jpg");
 
   /* Set a specific height */
-  height: 900px; 
+  height: 1000px; 
 
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
@@ -328,8 +293,8 @@ li::marker {
   font-size: 175px;
   color: hsl(51, 69%, 89%);
   font-family: "Inter", sans-serif;
-  margin-top: 50px;
-  padding: 265px;
+  margin-top: 30px;
+  padding: 175px;
   width: 100%;
   text-shadow: 8px 8px 12px #000000;
 }
@@ -354,7 +319,7 @@ li::marker {
 /* My navigation bar */
 .topnav {
   overflow: hidden;
-  padding: 0px 20px 0px 0px;
+  padding: 0px 140px 0px 0px;
   background-color: hsl(77, 27%, 44%, 0.7);
 }
 
@@ -362,12 +327,12 @@ li::marker {
 .topnav a {
   float: right;
   display: block;
-  color: #2f3827;
+  color: #000000;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 24px;
-  margin: 12px 10px;
+  font-size: 21px;
+  margin: 12px 4px;
   border-radius: 30px;
   font-family: "Contrail One", sans-serif;
 }
@@ -394,13 +359,13 @@ li::marker {
     height: 80px;
     width: auto;
     padding: 1px 0px 1px 0px;
-    margin: 0% 0% 0% 8%;
+    margin: 0% 0% 0% 12%;
 }
 
 /* my footer which contains hyperlinks and text */
 footer{
     text-align: center;
-    font-size: 20px;
+    font-size: 18px;
     padding: 20px;
     height: 100px;
     background-color: hsl(77, 27%, 44%, 0.7);
@@ -426,7 +391,7 @@ footer a:hover{
 
 /* changes the colour of the p tags in the footer */
 footer p{
-    font-size: 16px;
+    font-size: 14px;
     color: #431f0e;
     font-family: "Contrail One", sans-serif;
 }
@@ -580,34 +545,49 @@ iframe{
 .card img:hover,.card_big_three img:hover{
   opacity: 50%;
 }
+
+
+/* sets a colour, aligns text to the centre and gives a text shadow */
+h1,h2{
+    color:  hsl(23, 66%, 50%);
+    text-align: center;
+    text-shadow: 1px 1px 2px #431F0e;
+}
+
+/* colours the p and li tags and sizes them */
+p,li{
+  color: hsl(51, 69%, 89%);
+  font-size: clamp(0.8rem, calc(1.5vw + 0.25rem), 1.2rem);
+}
+
+/* sets the size of h1 tags */
+h1{
+  font-size: clamp(2rem, calc(2vw + 0.75rem), 2.25rem);
+}
+
+/* sets the size of h2 tags */
+h2{
+  font-size: clamp(1.5rem, calc(1.75vw + 0.5rem), 1.75rem);
+}
+
+/* sets a colour and gives a text shadow */
+strong{
+  color:  hsl(23, 66%, 50%);
+  text-shadow: 1px 1px 2px #431F0e;
+}
+ 
+/* Marker selects only the numbers/dots and styles them */
+li::marker {
+  font-weight: bold;
+  color:  hsl(19, 63%, 24%);
+}
+
 @media screen and (max-width: 1400px) and (min-width: 1000px){
 
-
-  /* makes the text in the top parallax smaller to show on a smaller screen */
-.parallax_text_art_of_tennis h1{
-  font-size: 125px;
-  margin-top: 50px;
-  padding: 250px;
-}
-
 /* makes the text in the top parallax smaller to show on a smaller screen */
-.parallax_text_how_to_play h1{
-  font-size: 125px;
-  margin-top: 50px;
-  padding: 250px;
-}
-
-/* makes the text in the top parallax smaller to show on a smaller screen */
-.parallax_text_grand_slam h1{
-  font-size: 125px;
-  margin-top: 100px;
-  padding: 120px;
-}
-
-/* makes the text in the top parallax smaller to show on a smaller screen */
-.parallax_text_big_three h1{
+.parallax_text_art_of_tennis h1, .parallax_text_how_to_play h1, .parallax_text_grand_slam h1, .parallax_text_big_three h1{
   font-size: 150px;
-  margin-top: 100px;
+  margin-top: 50px;
   padding: 120px;
 }
 
@@ -630,41 +610,21 @@ iframe{
         height: 600px;
     }
 
-    /* makes the text in the top parallax smaller to show on a smaller screen */
-    .parallax_text_art_of_tennis h1{
-  font-size: 100px;
-  margin-top: 50px;
-  padding: 250px;
-}
 
 /* Changes the sizing of the images */
 .float_right_img{
   float: right;
   height: auto;
-  width: 200px;
+  width: 140px;
   border-radius: 25px;
   padding: 10px;
 }
 
 /* makes the text in the top parallax smaller to show on a smaller screen */
-.parallax_text_how_to_play h1{
+.parallax_text_art_of_tennis h1, .parallax_text_how_to_play h1, .parallax_text_grand_slam h1, .parallax_text_big_three h1{
   font-size: 100px;
   margin-top: 50px;
-  padding: 250px;
-}
-
-/* makes the text in the top parallax smaller to show on a smaller screen */
-.parallax_text_grand_slam h1{
-  font-size: 125px;
-  margin-top: 60px;
-  padding: 160px;
-}
-
-/* makes the text in the top parallax smaller to show on a smaller screen */
-.parallax_text_big_three h1{
-  font-size: 125px;
-  margin-top: 60px;
-  padding: 160px;
+  padding: 100px;
 }
 }
 
@@ -736,76 +696,29 @@ iframe{
 }
 
 /* makes the top parallax smaller to show the word tennis on a smaller screen */
-.parallax_index{
+.parallax_index, .parallax_how_to_play, .parallax_grand_slam, .parallax_big_three{
   width: 100%;
-  height: 400px;
+  height: 375px;
   background-position: top;
   background-size: contain;
   background-repeat: no-repeat;
 }
 
-/* makes the top parallax smaller to show on a smaller screen */
-.parallax_how_to_play{
-  width: 100%;
-  height: 400px;
-  background-position: top;
-  background-size: contain;
-  background-repeat: no-repeat;
-}
-
-/* makes the top parallax smaller to show on a smaller screen */
-.parallax_grand_slam{
-  width: 100%;
-  height: 400px;
-  background-position: top;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-
-/* makes the top parallax smaller to show on a smaller screen */
-.parallax_big_three{
-  width: 100%;
-  height: 400px;
-  background-position: top;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
 
 /* Changes the sizing of the images */
 .float_right_img{
   float: right;
   height: auto;
-  width: 150px;
+  width: 130px;
   border-radius: 25px;
   padding: 10px;
 }
 
 /* makes the text in the top parallax smaller to show on a smaller screen */
-.parallax_text_art_of_tennis h1{
-  font-size: 75px;
+.parallax_text_art_of_tennis h1, .parallax_text_how_to_play h1, .parallax_text_grand_slam h1, .parallax_text_big_three h1{
+  font-size: 60px;
   margin-top: 50px;
-  padding: 50px;
-}
-
-/* makes the text in the top parallax smaller to show on a smaller screen */
-.parallax_text_how_to_play h1{
-  font-size: 75px;
-  margin-top: 50px;
-  padding: 50px;
-}
-
-/* makes the text in the top parallax smaller to show on a smaller screen */
-.parallax_text_grand_slam h1{
-  font-size: 75px;
-  margin-top: 50px;
-  padding: 50px;
-}
-
-/* makes the text in the top parallax smaller to show on a smaller screen */
-.parallax_text_big_three h1{
-  font-size: 75px;
-  margin-top: 50px;
-  padding: 50px;
+  padding: 10px;
 }
 
 /* sets height and width of my image slideshow on smaller screen */
@@ -828,6 +741,11 @@ iframe{
 /* class added by JS to hide the text that sits on my parallax images */
 .hidden-h1 {
   opacity: 0 !important;
+}
+
+/* Class added by JS to hide the arrow when menu is open */
+.hidden-arrow {
+  display: none !important;
 }
 
 /* Responsive columns */
