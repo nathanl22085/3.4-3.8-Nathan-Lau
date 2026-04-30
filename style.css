@@ -20,10 +20,9 @@
 	border: none;
 	text-align: left;
 	outline: none;
-	font-size: clamp(1rem, calc(1.5vw + 0.5rem), 1.25rem);
+	font: clamp(1rem, calc(1.5vw + 0.5rem), 1.25rem), "Funnel Sans", sans-serif;
 	transition: 0.4s;
 	border-radius: 25px;
-	font-family: "Funnel Sans", sans-serif;
 	box-shadow: #2f3827 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
 }
 .active, .accordion:hover {
@@ -67,9 +66,7 @@
 	top: 0;
 	/*Puts it near the top right corner, 10px from the right*/
 	right: 10px;
-	font-size: 40px;
-	font-weight: bolder;
-	/*Makes it bold for easier visibility*/
+	font: bolder, 40px;
 	color: hsl(51, 69%, 89%);
 	cursor: pointer;
 	/*Makes the cursor a pointer to tell the user it can be clicked on*/
@@ -156,9 +153,8 @@ body {
 /* text on top of the top parallax image */
 
 .parallax_text_big_three h1 {
-	font-size: 175px;
+	font: 175px, "Inter", sans-serif;
 	color: hsl(51, 69%, 89%);
-	font-family: "Inter", sans-serif;
 	margin: auto;
 	padding: 250px;
 	width: 100%;
@@ -194,9 +190,8 @@ body {
 /* text on top of the top parallax image */
 
 .parallax_text_grand_slam h1 {
-	font-size: 125px;
+	font: 125px, "Inter", sans-serif;
 	color: hsl(51, 69%, 89%);
-	font-family: "Inter", sans-serif;
 	margin: auto;
 	padding: 275px;
 	width: 100%;
@@ -232,9 +227,8 @@ body {
 /* text on top of the top parallax image */
 
 .parallax_text_how_to_play h1 {
-	font-size: 175px;
+	font: 175px, "Inter", sans-serif;
 	color: hsl(51, 69%, 89%);
-	font-family: "Inter", sans-serif;
 	margin: auto;
 	padding: 250px;
 	width: 100%;
@@ -270,9 +264,8 @@ body {
 /* text on top of the top parallax image */
 
 .parallax_text_art_of_tennis h1 {
-	font-size: 175px;
+	font: 175px, "Inter", sans-serif;
 	color: hsl(51, 69%, 89%);
-	font-family: "Inter", sans-serif;
 	margin-top: 30px;
 	padding: 175px;
 	width: 100%;
@@ -311,10 +304,9 @@ body {
 	text-align: center;
 	padding: 14px 16px;
 	text-decoration: none;
-	font-size: 21px;
+	font: 21px, "Contrail One", sans-serif;
 	margin: 12px 4px;
 	border-radius: 30px;
-	font-family: "Contrail One", sans-serif;
 }
 /* changes the background colour of the nav bar links and colour of the text when hovered over */
 
@@ -370,9 +362,8 @@ footer a:hover {
 /* changes the colour of the p tags in the footer */
 
 footer p {
-	font-size: 14px;
+	font: 14px, "Contrail One", sans-serif;
 	color: #431f0e;
-	font-family: "Contrail One", sans-serif;
 }
 /* sets the width and height of my iframes */
 
@@ -414,8 +405,7 @@ iframe {
 	margin-top: -22px;
 	padding: 16px;
 	color: hsl(51, 69%, 89%);
-	font-weight: bold;
-	font-size: 18px;
+	font: bold, 18px;
 	transition: 0.6s ease;
 	border-radius: 0 3px 3px 0;
 	user-select: none;
@@ -589,7 +579,6 @@ li::marker {
 	}
 	/* Changes the sizing of the images */
 	.float_right_img {
-		float: right;
 		height: auto;
 		width: 140px;
 		border-radius: 25px;
@@ -675,11 +664,11 @@ li::marker {
 	}
 	/* Changes the sizing of the images */
 	.float_right_img {
-		float: right;
-		height: auto;
-		width: 130px;
+		height: 300px;
+		width: 100%;
 		border-radius: 25px;
 		padding: 10px;
+    object-fit: cover;
 	}
 	/* makes the text in the top parallax smaller to show on a smaller screen */
 	.parallax_text_art_of_tennis h1, .parallax_text_how_to_play h1, .parallax_text_grand_slam h1, .parallax_text_big_three h1 {
